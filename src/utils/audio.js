@@ -9,7 +9,7 @@ export const playAudio = (letter, name) => {
 
   // İnternet kısıtlamalarını ve gizli sekme yasaklarını aşmak için
   // önceden indirilmiş yerel .mp3 dosyalarını kullanıyoruz.
-  const url = `/audio/${name}.mp3`;
+  const url = `${import.meta.env.BASE_URL}audio/${name}.mp3`;
 
   currentAudio = new Audio(url);
   
